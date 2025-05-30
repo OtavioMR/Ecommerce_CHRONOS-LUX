@@ -1,0 +1,49 @@
+.preto {
+    height: 1.5rem;  /* Corrigido de "res" para "rem" */
+    background-color: black;
+    color: black;
+}
+
+.navbar {
+    padding: 0.5rem 1rem;  /* Corrigido de "res" para "rem" */
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;  /* Corrigido de "res" para "rem" */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dropdown-toggle::after {
+    margin-left: 0.3em;
+    vertical-align: middle;
+}
+
+.search-box {
+    border: none;
+    border-bottom: 1px solid #ddd;  /* Corrigido de "ipx" e "wddd" */
+    border-radius: 0;
+    padding-left: 0;
+    background: transparent;
+    width: 200px;
+}
+
+.search-box:focus {  /* Removido espaço antes de "focus" */
+    box-shadow: none;
+    border-bottom-color: #000;  /* Corrigido de "#800" */
+}
+
+.nav-icons {  /* Corrigido de "nav-icon" */
+    font-size: 1.5rem;  /* Corrigido de "res" para "rem" */
+    padding: 1rem;  /* Corrigido de "res" para "rem" */
+}
+
+.nav-icons a {  /* Corrigido de "nav-icon" */
+    color: #000;  /* Corrigido de "#800" */
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.nav-icons a:hover {
+    color: #555;
+}
