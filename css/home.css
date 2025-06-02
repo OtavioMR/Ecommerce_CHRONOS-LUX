@@ -1,0 +1,27 @@
+.fundo-inicio {
+    background: linear-gradient(135deg, 
+        #a37e06 0%,    /* dourado claro */
+        #f0bb37 40%,   /* dourado médio */
+        #ffd700 70%,   /* amarelo ouro */
+        #ffb700 100%); /* dourado médio */
+    min-height: 300px; /* altura mínima visível */
+    position: relative;
+}
+
+.fundo-inicio > div {
+    max-width: 300px;  /* limitar largura da div da imagem */
+    margin: 0 auto;    /* centralizar horizontal */
+}
+
+.imagem-fundo {
+    width: 100%;       /* a imagem vai respeitar o max-width da div */
+    height: auto;
+    display: block;    /* remove espaços embaixo da imagem */
+}
+
+.marcas-relogio{
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: black;
+    color: white;
+    }
