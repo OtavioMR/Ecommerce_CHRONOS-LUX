@@ -74,13 +74,16 @@ font-size: 1.5rem;
 
 @media (max-width: 576px) {
 
+.marcas-relogio{
+
+    font-size: 1rem;
+}
+
 .marcas-relogio .row {
 
 margin-left: -5px;
 
 margin-right: -5px;
-
-font-size: 1rem;
 
 }
 
