@@ -1,27 +1,101 @@
+/* Estilos para a seção de fundo */
+
 .fundo-inicio {
-    background: linear-gradient(135deg, 
-        #a37e06 0%,    /* dourado claro */
-        #f0bb37 40%,   /* dourado médio */
-        #ffd700 70%,   /* amarelo ouro */
-        #ffb700 100%); /* dourado médio */
-    min-height: 300px; /* altura mínima visível */
-    position: relative;
+
+background: linear-gradient(135deg,
+
+#a37e06 0%,    /* dourado claro */
+
+#f0bb37 40%,   /* dourado médio */
+
+#ffd700 70%,   /* amarelo ouro */
+
+#ffb700 100%); /* dourado médio */
+
+min-height: 30vh; /* altura mínima relativa */
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 20px 0;
+
 }
 
 .fundo-inicio > div {
-    max-width: 300px;  /* limitar largura da div da imagem */
-    margin: 0 auto;    /* centralizar horizontal */
+
+width: 100%;
+
+max-width: 300px;
+
+padding: 0 10px;
+
 }
 
 .imagem-fundo {
-    width: 100%;       /* a imagem vai respeitar o max-width da div */
-    height: auto;
-    display: block;    /* remove espaços embaixo da imagem */
+
+width: 100%;
+
+height: auto;
+
+max-height: 300px;
+
+object-fit: contain;
+
 }
 
-.marcas-relogio{
-    height: 3rem;
-    font-size: 1.5rem;
-    background-color: black;
-    color: white;
-    }
+/* Ajuste para telas muito pequenas */
+
+@media (max-width: 350px) {
+
+.fundo-inicio > div {
+
+max-width: 100%;
+
+padding: 0 15px;
+
+}
+
+}
+
+/* Estilos para as marcas (agora usando grid do Bootstrap) - não precisa de mais nada aqui, a não ser cores, etc. */
+
+/* Estilos para os cards de produto (se houver) */
+
+.product-card {
+
+transition: transform 0.3s, box-shadow 0.3s;
+
+margin-bottom: 1.5rem;
+
+}
+
+.product-card:hover {
+
+transform: translateY(-5px);
+
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+}
+
+.product-image {
+
+height: 200px;
+
+object-fit: contain;
+
+padding: 15px;
+
+}
+
+.price {
+
+color: #dc3545;
+
+font-size: 1.25rem;
+
+font-weight: bold;
+
+}
