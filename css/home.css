@@ -61,57 +61,39 @@ padding: 0 15px;
 }
 
 .marcas-relogio {
-
-background-color: black;
-
-color: white;
-
-padding: 15px 0;
-
-font-size: 1.5rem;
-
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
+.marcas-relogio p {
+  margin: 0;
+  text-align: center;
+  padding: 10px 5px;
+  font-size: clamp(0.8rem, 1.8vw, 1.2rem);
+  overflow-wrap: break-word;
+}
+
+/* Fontes personalizadas */
+.rolex {
+  font-family: 'EB Garamond', serif;
+}
+.cartier {
+  font-family: 'Playfair Display', serif;
+}
+.patek {
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Responsividade */
 @media (max-width: 576px) {
-
-.marcas-relogio{
-
+  .marcas-relogio p {
     font-size: 1rem;
+  }
 }
 
-.marcas-relogio .row {
-
-margin-left: -5px;
-
-margin-right: -5px;
-
-}
-
-}
-
-
-
-text-align: center;
-
-padding: 10px 5px;
-
-font-size: clamp(0.8rem, 1.8vw, 1.2rem); /* Tamanhos ajustados */
-
-overflow-wrap: break-word; /* Quebra palavras longas */
-
-}
-
-.rolex{
-    font-family: 'EB Garamond', serif; 
-}
-
-.cartier{
-    font-family: 'Playfair Display', serif;
-}
-
-.patek{
-    font-family: 'Libre Baskerville', serif;
-}
 
 
 /* Estilos para as marcas (agora usando grid do Bootstrap) - não precisa de mais nada aqui, a não ser cores, etc. */
