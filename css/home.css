@@ -60,6 +60,26 @@ padding: 0 15px;
 
 }
 
+.marcas-relogio {
+    background-color: black;
+    color: white;
+    font-size: 2rem;
+    padding: 15px 0;
+}
+
+.rolex{
+    font-family: 'EB Garamond', serif; 
+}
+
+.cartier{
+    font-family: 'Playfair Display', serif;
+}
+
+.patek{
+    font-family: 'Libre Baskerville', serif;
+}
+
+
 /* Estilos para as marcas (agora usando grid do Bootstrap) - não precisa de mais nada aqui, a não ser cores, etc. */
 
 /* Estilos para os cards de produto (se houver) */

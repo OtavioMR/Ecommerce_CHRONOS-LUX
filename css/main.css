@@ -47,3 +47,18 @@
 .nav-icons a:hover {
     color: #555;
 }
+
+
+footer a {
+
+text-decoration: none;
+
+transition: all 0.3s ease;
+
+}
+
+footer a:hover {
+
+color: #ffd700 !important; /* Dourado ao passar o mouse */
+
+}
