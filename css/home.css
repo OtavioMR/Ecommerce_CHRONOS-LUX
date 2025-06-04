@@ -61,9 +61,45 @@ padding: 0 15px;
 }
 
 .marcas-relogio {
-    background-color: black;
-    color: white;
-    font-size: 2rem;
+
+background-color: black;
+
+color: white;
+
+padding: 15px 0;
+
+font-size: 1.5rem;
+
+}
+
+@media (max-width: 576px) {
+
+.marcas-relogio .row {
+
+margin-left: -5px;
+
+margin-right: -5px;
+
+}
+
+.brand-item {
+
+padding: 10px 2px;
+
+}
+
+}
+
+
+
+text-align: center;
+
+padding: 10px 5px;
+
+font-size: clamp(0.8rem, 1.8vw, 1.2rem); /* Tamanhos ajustados */
+
+overflow-wrap: break-word; /* Quebra palavras longas */
+
 }
 
 .rolex{
