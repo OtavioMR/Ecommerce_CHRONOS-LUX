@@ -49,6 +49,67 @@
 }
 
 
+.fundo-inicio {
+
+background: linear-gradient(135deg,
+
+#a37e06 0%,    /* dourado claro */
+
+#f0bb37 40%,   /* dourado médio */
+
+#ffd700 70%,   /* amarelo ouro */
+
+#ffb700 100%); /* dourado médio */
+
+min-height: 30vh; /* altura mínima relativa */
+
+display: flex;
+
+align-items: center;
+
+justify-content: center;
+
+padding: 20px 0;
+
+}
+
+.fundo-inicio > div {
+
+width: 100%;
+
+max-width: 300px;
+
+padding: 0 10px;
+
+}
+
+.imagem-fundo {
+
+width: 100%;
+
+height: auto;
+
+max-height: 300px;
+
+object-fit: contain;
+
+}
+
+/* Ajuste para telas muito pequenas */
+
+@media (max-width: 350px) {
+
+.fundo-inicio > div {
+
+max-width: 100%;
+
+padding: 0 15px;
+
+}
+
+}
+
+
 footer a {
 
 text-decoration: none;
