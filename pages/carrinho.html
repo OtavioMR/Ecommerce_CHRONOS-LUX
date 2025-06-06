@@ -16,7 +16,7 @@
 
     <!-- Seu CSS -->
 
-    <link rel="stylesheet" href="/css/cadastro.css">
+    <link rel="stylesheet" href="/css/carrinho.css">
 
     <link rel="stylesheet" href="/css/main.css">
 
@@ -125,7 +125,7 @@
 
                 <div class="nav-icons d-flex">
 
-                    <a href="/pages/carrinho.html" class="position-relative me-3">
+                    <a href="" class="position-relative me-3">
 
                         <i class="bi bi-cart fs-5"></i>
 
@@ -139,7 +139,7 @@
 
                     </a>
 
-                    <a href="">
+                    <a href="/pages/cadastro.html">
 
                         <i class="bi bi-person fs-5"></i>
 
@@ -184,38 +184,117 @@
     </div>
 
 
-    <section class="formulario-cadastro">
-        <form action="" method="post">
-            <h1>Cadastre-se</h1>
 
-            <div class="mb-3">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Insira aqui">
+
+    <div class="cart-container">
+        <h1 class="cart-header">Seu Carrinho de Compras</h1>
+
+        <div class="cart-items">
+            <div class="cart-item">
+                <img src="https://images.tcdn.com.br/img/img_prod/1289066/relogio_rolex_submariner_123_1_ed7ccbac817f553112faa54f317df67b.jpg"
+                    alt="Rolex Submariner" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3 class="cart-item-title">Relógio Rolex Submariner Verde Hulk</h3>
+                    <div class="cart-item-price">R$ 1.099,00</div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="remove-btn">
+                        <i class="bi bi-trash"></i> Remover
+                    </button>
+                </div>
+                <div class="cart-item-total">
+                    <div class="item-total-price">R$ 1.099,00</div>
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required placeholder="Insira aqui">
+            <div class="cart-item">
+                <img src="https://orit.fbitsstatic.net/img/p/rolex-gmt-master-ll-210680/411999-10.jpg?w=1500&h=1500&v=202505151955"
+                    alt="Rolex GMT Master" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3 class="cart-item-title">Rolex GMT Master II</h3>
+                    <div class="cart-item-price">R$ 111.990,00</div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="remove-btn">
+                        <i class="bi bi-trash"></i> Remover
+                    </button>
+                </div>
+                <div class="cart-item-total">
+                    <div class="item-total-price">R$ 111.990,00</div>
+                </div>
             </div>
 
-            <div class="mb-3">
-                <label for="data-nascimento">Data de Nascimento:</label>
-                <input type="date" id="data-nascimento" name="data-nascimento" required placeholder="Insira aqui">
+            <div class="cart-item">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS2LlLqWuM1bneE2aTdefL6VCazDlAsCIp5n1ih8oh1Lv4--NzWw4K_QpyAKdjrvFn6soQLiFv7OEfpq_DB1Ndm7XJJ4eRi8zfPfiePwIRoX1IKeEpTNiEu0g"
+                    alt="Cartier Ballon Bleu" class="cart-item-image">
+                <div class="cart-item-details">
+                    <h3 class="cart-item-title">Relógio CARTIER Ballon Bleu Aço Lady</h3>
+                    <div class="cart-item-price">R$ 33.000,00</div>
+                    <div class="quantity-control">
+                        <button class="quantity-btn minus">-</button>
+                        <input type="number" class="quantity-input" value="1" min="1">
+                        <button class="quantity-btn plus">+</button>
+                    </div>
+                    <button class="remove-btn">
+                        <i class="bi bi-trash"></i> Remover
+                    </button>
+                </div>
+                <div class="cart-item-total">
+                    <div class="item-total-price">R$ 33.000,00</div>
+                </div>
             </div>
+        </div>
 
-            <div class="mb-3">
-                <label for="senha">Insira sua senha:</label>
-                <input type="password" id="senha" name="senha" required placeholder="Insira aqui"> 
+        <div class="row">
+            <div class="col-md-8">
+                <a href="/index.html" class="back-to-shop">
+                    <i class="bi bi-arrow-left"></i> Continuar comprando
+                </a>
             </div>
+            <div class="col-md-4">
+                <div class="cart-summary">
+                    <h3 class="summary-title">Resumo do Pedido</h3>
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span>R$ 146.089,00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Frete:</span>
+                        <span>Grátis</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Desconto:</span>
+                        <span>R$ 0,00</span>
+                    </div>
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span>R$ 146.089,00</span>
+                    </div>
 
-            <div class="mb-3">
-                <label for="confirmar-senha">Confirme sua senha:</label>
-                <input type="password" id="confirmar-senha" name="confirmar-senha" required placeholder="Insira aqui">
+                    <button class="btn btn-checkout">
+                        Finalizar Compra <i class="bi bi-arrow-right"></i>
+                    </button>
+
+                    <div class="mt-3 text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/2560px-MasterCard_Logo.svg.png"
+                            alt="Mastercard" style="height: 25px; margin: 0 5px;">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/2560px-Visa_Inc._logo.svg.png"
+                            alt="Visa" style="height: 20px; margin: 0 5px;">
+                        <img src="https://i.pinimg.com/originals/c7/e7/9f/c7e79f0c2dff3ff7fcd06c0b23f76d50.png"
+                            alt="Pix" style="height: 50px; margin: 0 5px;">
+                    </div>
+                </div>
             </div>
+        </div>
+    </div>
 
-            <button type="submit">Criar conta</button>
-        </form>
-    </section>
+
 
 
 
