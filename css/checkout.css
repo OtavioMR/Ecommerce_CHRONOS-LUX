@@ -1,0 +1,173 @@
+:root {
+    --dourado-claro: #f0bb37;
+    --dourado-medio: #a37e06;
+    --dourado-escuro: #8a6a05;
+    --texto-escuro: #333;
+    --texto-claro: #f8f9fa;
+    --fundo-claro: #f8f9fa;
+    --borda: #e0e0e0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: var(--texto-escuro);
+}
+
+.container-checkout {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 15px;
+}
+
+.titulo-principal {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 2px solid var(--dourado-medio);
+    padding-bottom: 15px;
+}
+
+.etapa {
+    font-weight: 500;
+    color: var(--dourado-medio);
+    margin-bottom: 1rem;
+}
+
+.card-formulario {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.titulo-secao {
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--borda);
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    border: 1px solid var(--borda);
+}
+
+.form-control:focus {
+    border-color: var(--dourado-medio);
+    box-shadow: 0 0 0 2px rgba(163, 126, 6, 0.2);
+}
+
+.resumo-pedido {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.linha-resumo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid var(--borda);
+}
+
+.botao-primario {
+    background-color: var(--dourado-medio);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.botao-primario:hover {
+    background-color: var(--dourado-escuro);
+}
+
+.item-carrinho {
+    display: flex;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--borda);
+}
+
+.imagem-produto {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+    border: 1px solid var(--borda);
+    padding: 5px;
+}
+
+.detalhes-produto {
+    flex: 1;
+}
+
+.nome-produto {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.preco-produto {
+    color: var(--dourado-medio);
+}
+
+.metodo-pagamento {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid var(--borda);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.metodo-pagamento:hover {
+    border-color: var(--dourado-medio);
+}
+
+.metodo-pagamento.ativo {
+    border-color: var(--dourado-medio);
+    background-color: rgba(163, 126, 6, 0.05);
+}
+
+.icone-pagamento {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: var(--dourado-medio);
+}
+
+.rodape {
+    background-color: #212529;
+    color: white;
+    padding: 50px 0 20px;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .container-checkout {
+        padding: 0 10px;
+    }
+
+    .card-formulario,
+    .resumo-pedido {
+        padding: 15px;
+    }
+}
